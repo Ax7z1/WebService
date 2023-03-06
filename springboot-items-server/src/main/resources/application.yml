@@ -1,0 +1,10 @@
+server:
+  port: 8099
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatisdb?test=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
