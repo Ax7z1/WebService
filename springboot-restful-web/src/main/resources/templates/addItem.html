@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>添加商品信息</title>
+
+</head>
+<body>
+	<form id="itemForm" th:action="@{/addItemsSubmit}" method="post">
+		添加商品
+		<table width="100%" border=1>
+			<tr>
+				<td>商品名称</td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>商品价格</td>
+				<td><input type="text" name="price" /></td>
+			</tr>
+			<tr>
+				<td>商品生产日期</td>
+				<td><input type="text" name="createtime" /></td>
+			</tr>
+			<tr>
+				<td>商品图片</td>
+				<td>
+				<input type="text" name="pic" /></td>
+			</tr>
+			<tr>
+				<td>商品简介</td>
+				<td><textarea rows="3" cols="30" name="detail"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="提交" />
+				</td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+
+</html>
